@@ -1,0 +1,20 @@
+#+TITLE: Über mich
+
+* Persönlich
+
+Studium Mathematik und Psychologie/Philosophie
+
+* Informatik
+
+Programmiersprachen:
+- Lisp
+- PASCAL
+- Javascript
+- PHP
+- Python
+
+* Mathematik
+
+- Wahrscheinlichkeitsrechnung und
+- Bayes-Denken
+- Kategorientheorie
