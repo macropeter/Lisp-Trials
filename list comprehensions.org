@@ -1,0 +1,49 @@
+#+TITLE list comprehensions
+#+AUTHOR: Peter Ostertag
+#+DATE: <2020-05-02 Sa>
+#+LANGUAGE: de
+#+LATEX_HEADER: \usepackage[naustrian]{babel}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{--} 
+#+OPTIONS: ':t
+#+OPTIONS: ^:nil  # underscore escapen
+#+OPTIONS: toc:nil num:2
+
+
+
+gibts -- natürlich! -- in LISP eh schon längst...
+
+Nämlich mit einem Loop-Macro könnte man z.B. schreiben:
+
+#+BEGIN_SRC lisp
+ (loop for i in LL collect (* i i ))  
+#+END_SRC
+
+was eigentlich genauso gut ist wie in Python:
+
+#+BEGIN_SRC python
+ [i^2 for i in LL]
+#+END_SRC
+
+
+Nur dass die Struktur in LISP noch viel flexibler ist...
+
+Natürlich geht das auch doppelt:
+
+#+BEGIN_SRC lisp
+(loop for x in '(a b c d e)
+      for y in '(1 2 3 4 5)
+      collect (list x y) )
+#+END_SRC
+
+
+Oder noch komplizierter: (die Ulamfunktion in einer Zeile):
+
+#+BEGIN_SRC lisp
+  (loop for x = input then (if (evenp x)
+			       (/ x 2)
+			       (1+ (* 3 x)))
+     collect x
+     until (= x 1))
+#+END_SRC
+
+Sehr schön erklärt das Peter Seibel in [http://www.gigamonkeys.com/book/loop-for-black-belts.html]
