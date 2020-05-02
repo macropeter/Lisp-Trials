@@ -1,4 +1,4 @@
-#+TITLE list comprehensions
+#+TITLE: list comprehensions
 #+AUTHOR: Peter Ostertag
 #+DATE: <2020-05-02 Sa>
 #+LANGUAGE: de
