@@ -6,3 +6,4 @@ Based on following literature:
 - Conrad Barski: Land of Lisp
 - Doug Hoyte: LOL - Let Over Lambda
 - Peter Seibel: Practical Common Lisp
+- Abelson/Sussman/Sussman: Structure and Interpretation of Computer Programs (SICP)
